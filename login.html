@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Furture</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="maincss.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+        <script>
+        function validaterForm(){
+            var x = document.forms["myForm"]["uname"];
+            if(x.value == ""){
+                alert("Enter uname");
+                return false;
+            }
+        }
+        function validateForm(){
+            var y = document.forms["myForm"]["uname"];
+            if(y.value == ""){
+                alert("Uname can't be blank");
+                return false;
+            }
+            var e = document.forms["myForm"]["email"];
+            if(e.value=""){
+                alert("Email can't be blank");
+                return false;
+            }
+
+        }
+      
+        </script>
+</head>
+
+<body>
+    <!-- top -->
+        <div class="topheader hidden-xs">
+                <div class="container">
+                    <div class="login">
+                        <ul>
+                            <li><a href="login.html">Sign in</a></li>
+                            <li><a href="login.html">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class="toplinks">
+                        <ul>
+                            <li>
+                                <a href="#">stores</a>
+                            </li>
+                            <li>
+                                <a href="#">sell here</a>
+                            </li>
+                            <li>
+                                <a href="#">Buy here</a>
+                            </li>
+                            <li>
+                                <a href="#">Franchaise</a>
+                            </li>
+                            <li>
+                                <a href="#">Track your order</a>
+                            </li>
+                            <li>
+                                <a href="#">support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- top end -->
+
+            <div class="mainhead">
+                    <div class="container">
+                        <div class="row">
+            
+                            <div class="col-md-4 logo">
+                                <a href="main.html">
+                                    <img src="logo.png" height="40" width="180">
+                                </a>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <div class="search-block">
+                                    <div class="search-bar">
+                                        <form action="/search" name="form">
+                                            <input type="text" class="ui-autocomplete-input bar" autocomplete="off">
+                                            <div class="author"></div>
+                                            <a href="#">
+                                                <i class="fa fa-search" aria-hidden="true" style="color:#000"></i>
+                                            </a>
+                                        </form>
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#" title="Wish List"><i class="fa fa-heart-o" aria-hidden="true" style="font-size: 20px;color:#000;"></i><span
+                                            class="wishlist_alert">0</span></a> &nbsp; &nbsp;
+                                    &nbsp;&nbsp;
+                                    <a href="#" title="cart"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:20px;color:#000"></i><span
+                                            class="cart_alert">0</span></a>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="container menu">
+                    <div class="mainmenu">
+                        <ul class="nav nav-pills">
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="row">
+                                    <ul class="dropdown-menu">
+                                        <li>
+            
+                                            <ul>
+                                                <li> <a href="#" class="dropdown-head">
+                                                        <h3>Menu<h3>
+                                                    </a></li>
+            
+                                                <li> <a href="#">New items<i class="icon-arrow-right"></i></a></li>
+            
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li> <a href="#" class="dropdown-head">
+                                                        <h3>Upcoming</h3>
+                                                    </a></li>
+            
+                                                <li> <a href="#">level<i class="icon-arrow-right"></i></a></li>
+            
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+            
+            
+            
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu" style="left:-100px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+            
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu" style="left:-200px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+            
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu mega-dropdown" style="left:-300px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+            
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu mega-dropdown" style="left:-400px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+            
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu mega-dropdown" style="left:-500px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+            
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu mega-dropdown" style="left:-600px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+            
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu mega-dropdown" style="left:-700px">
+                                    <li>
+            
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Menu<h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">New items</a></li>
+            
+            
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <ul>
+                                            <li> <a href="#" class="dropdown-head">
+                                                    <h3>Upcoming</h3>
+                                                </a></li>
+            
+                                            <li> <a href="#">level</a></li>
+            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+            
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+
+    <!-- login form -->
+    <div class="registration">
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row loginrow">
+                <section >
+                    <div class="loginform" style="padding-top:15% !important">
+                            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+                            <h2>Already have an account</h2>
+
+                    <label for="uname" style="font-size: 15px;"><b>User Name</b></label>
+                    <input type="text" class="inputtext" placeholder="Enter Username" name="uname" >
+
+                    <label for="psw" style="font-size: 15px;"><b>Password</b></label>
+                    <input type="password" placeholder="Enter password" name="psw" required>
+                    <button type="submit">sign in</button>
+                    <br>
+                    <label for="remember">
+                        <input type="checkbox" checked="checked" name="remember">Remember me</label>
+                    </form>
+
+                        </div>
+                        </section>
+                    <section style="width:50%">
+                            <div class="loginform">
+                                    <form name="registerForm" action="/action_page.php" onsubmit="return validaterForm()" method="post">
+
+                                    <h2>Create New account</h2>
+
+
+
+                        <label for="uname" style="font-size: 15px;"><b>User Name</b></label>
+                        <input type="text" class="inputtext" placeholder="Enter Username" name="uname" >
+                        <label for="email" style="font-size: 15px;"><b>Email</b></label>
+                        <input type="email" placeholder="Enter your Email" name="email" required>
+                        
+                        <label for="psw" style="font-size: 15px;"><b>Password</b></label>
+                        <input type="password" placeholder="Enter password" name="psw" required>
+                        <label for="psw" style="font-size: 15px;"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Enter password" name="psw" required>
+                        <button type="submit">Register</button><br><br>
+                        <label for="Accept">
+                            <input type="checkbox" name="terms" required><h3>Accept Terms and conditions</h3></label>
+                        </form>
+   
+                        </div>
+                            </section>
+                            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- login form end -->
+
+<div>
+    <form>
+        <img src="thumb1.jpg" id="myImage">
+        <p>click on button to slide image to right</p>
+        <input type="button" value="Click me" onclick="moveRight()" >
+        <input type="button" value="stop" onclick="stop()">
+    </form>
+    
+</div>
+<script>
+        var imgObj = null;
+        var animate;
+        function init(){
+            imgObj = document.getElementById("myImage");
+            imgObj.style.position="relative";
+            imgObj.style.left= '0px';
+        }
+        function moveRight(){
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            animate = setTimeout(moveRight,20);
+        }
+        function stop(){
+            clearTimeout(animate);
+            imgObj.style.left='0px';
+        }
+        window.onload = init;
+</script>
+
+
+<footer>
+        <div class="container footerdesign">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <h4 class="footerlogo">
+                        <img src="logo.png" style="width:150px">
+                    </h4>
+                    <ul style="list-style:none; font-size: 15px">
+                        <li><a href="#" style="text-decoration: none; color: gray">about us</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">about us</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">about us</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">about us</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">about us</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">about us</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>User Account</h4>
+                    <ul style="list-style:none; font-size: 15px;">
+                        <li><a href="#" style="text-decoration: none;color: gray">Login</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">Register</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    <h4>Authorised Account</h4>
+                    <ul style="list-style:none; font-size: 15px">
+                        <li><a href="#" style="text-decoration: none;color: gray">Login</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Custemor support</h4>
+                    <ul style="list-style:none; font-size: 15px;">
+                        <li><a href="#" style="text-decoration: none;color: gray">track order</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">login</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    <h4>Need help?</h4>
+                    <ul style="list-style:none; font-size: 15px">
+                        <li><a href="#" style="text-decoration: none;color: gray">care</a></li>
+                        <li><a href="#" style="text-decoration: none;color: gray">Sell here</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3 social">
+                    <h4>Follow Us</h4>
+                    &nbsp;&nbsp;
+                    <ul style="list-style:none;display: flex;">
+                        <li><a href="#"><i class="fa fa-linkedin" style="font-size:20px;color:rgb(57, 58, 134);"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" style="font-size:20px;color:rgb(0, 2, 94);"></i></a></li>
+
+                        <li><i class="fa fa-instagram" style="font-size:20px;color:rgb(202, 78, 47);"></i></li>
+
+
+                    </ul>
+                    <h4>&nbsp;</h4>
+                    <ul class="footer-app" style="list-style:none;display: flex">
+                        <li><i class="fa fa-google" style="font-size:30px;color:red;"></i></li>
+                        <li><i class="fa fa-youtube" style="font-size:30px;color:red;"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+    input[type=password],input[type=email]{
+    padding: 12px 20px;
+    margin: 8px 0px;
+    width: 100%;
+    color: black;
+    display: inline-block;
+    
+    border: 1px solid #ccc;
+    background-color: rgb(166, 196, 196);
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.inputtext{
+    padding: 12px 20px;
+    margin: 8px 0px;
+    width: 100%;
+    color: black;
+    display: inline-block;
+    
+    border: 1px solid #ccc;
+    background-color: rgb(166, 196, 196);
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type=text]:hover, input[type=password]:hover,input[type=email]:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+
+}
+button{
+    background-image: linear-gradient(green, black);
+    color: white !important;
+    font-size: 15px !important;
+    padding: 12x 20px;
+    margin: 8px 0;
+    width: 30%;
+    cursor: pointer;
+    border: cornflowerblue;
+}
+.loginform{
+    width: 85%; 
+}
+.registration{
+       background: rgb(53, 45, 45);
+       color: antiquewhite;
+}
+button {
+    max-width: 100%;
+    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  button:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  } 
+  .loginrow{
+      display: -webkit-inline-box !important;
+  }
+
+
+  
